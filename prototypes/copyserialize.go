@@ -10,14 +10,6 @@ type AddressSerial struct {
 	StreetAddress, City, Country string
 }
 
-func (a *AddressSerial) DeepCopy() *AddressSerial {
-	return &AddressSerial{
-		a.StreetAddress,
-		a.City,
-		a.Country,
-	}
-}
-
 type PersonSerial struct {
 	Name    string
 	Address *AddressSerial
