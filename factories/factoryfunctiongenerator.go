@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-type Emoployee struct {
+type Employee struct {
 	Name, Position string
 	AnnualIncome   float32
 }
 
-func NewEmployeeFactory(position string, annualIncome float32) func(name string) *Emoployee {
-	return func(name string) *Emoployee {
-		return &Emoployee{name, position, annualIncome}
+func NewEmployeeFactory(position string, annualIncome float32) func(name string) *Employee {
+	return func(name string) *Employee {
+		return &Employee{name, position, annualIncome}
 	}
 }
 
