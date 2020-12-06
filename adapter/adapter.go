@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -83,7 +82,5 @@ func VectorToRaster(vi *VectorImage) RasterImage {
 }
 
 func main() {
-	rc := NewRectangle(6, 4)
 
-	fmt.Print(DrawPoints(rc))
 }
