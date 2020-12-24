@@ -27,7 +27,7 @@ func (s State) String() string {
 		return "Connected"
 	case OnHold:
 		return "OnHold"
-	case OnHook:
+	case OnHook:/.,mn  []
 		return "OnHook"
 	}
 	return "Unknown"
